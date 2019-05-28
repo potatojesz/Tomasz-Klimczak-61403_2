@@ -51,7 +51,7 @@ class MLista:
         self.lista.reverse()
 
     def zwieksz_pojemnosc(self, x):
-        if x <= 0:
+        if x < 0:
             return False
         else:
             self.capacity += x
