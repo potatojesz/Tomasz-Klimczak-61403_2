@@ -29,6 +29,16 @@ class TestMLista(unittest.TestCase):
         self.assertFalse(testList.zmniejsz_pojemnosc(150), "Should be FALSE")
         self.assertFalse(testList.zwieksz_pojemnosc(-5), "Should be FALSE")
 
+    def test_zwieksz_pojemnosc(self):
+        testList = mLista.MLista(5)
+        self.assertTrue(testList.zwieksz_pojemnosc(5), "Should be TRUE")
+        self.assertFalse(testList.zwieksz_pojemnosc(-5), "Should be FALSE")
+
+    def test_zmniejsz_pojemnosc(self):
+        testList = mLista.MLista(5)
+        self.assertTrue(testList.zmniejsz_pojemnosc(3), "Should be TRUE")
+        self.assertFalse(testList.zmniejsz_pojemnosc(150), "Should be FALSE")
+
     def test_usun_powtorzenia(self):
         testList = mLista.MLista(5)
         testList.dodaj_element(5)
