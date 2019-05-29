@@ -1,5 +1,4 @@
 import unittest
-
 import mLista
 
 
@@ -9,6 +8,10 @@ class TestMLista(unittest.TestCase):
         testList = mLista.MLista(10)
         self.assertIsNotNone(testList, "MLista did not create")
         self.assertEqual(testList.capacity, 10, "Capacity should be 10")
+
+    def test_pisz(self):
+        testList = mLista.MLista(10)
+        self.assertIsNone(testList.pisz(), "Should be NONE")
 
     def test_rozmiar(self):
         testList = mLista.MLista(5)
