@@ -55,9 +55,9 @@ def main():
                         should_exit = True
                     else:
                         utils.print_error()
-                except:
+                except ValueError:
                     utils.print_error()
-        except:
+        except ValueError:
             utils.print_error()
     utils.print_end()
 
